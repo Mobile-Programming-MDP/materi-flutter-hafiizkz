@@ -1,0 +1,52 @@
+[
+  {
+    "nama": "John Doe",
+    "umur": 30,
+    "alamat": {
+      "jalan": "Jl. Pahlawan",
+      "kota": "Surabaya",
+      "provinsi": "Jawa Timur"
+    },
+    "hobi": ["membaca", "bersepeda"]
+  },
+  {
+    "nama": "Jane Smith",
+    "umur": 28,
+    "alamat": {
+      "jalan": "Jl. Sudirman",
+      "kota": "Jakarta",
+      "provinsi": "DKI Jakarta"
+    },
+    "hobi": ["menulis", "melukis"]
+  },
+  {
+    "nama": "Ahmad Rizki",
+    "umur": 35,
+    "alamat": {
+      "jalan": "Jl. Asia Afrika",
+      "kota": "Bandung",
+      "provinsi": "Jawa Barat"
+    },
+    "hobi": ["futsal", "traveling"]
+  },
+  {
+    "nama": "Siti Rahma",
+    "umur": 26,
+    "alamat": {
+      "jalan": "Jl. Malioboro",
+      "kota": "Yogyakarta",
+      "provinsi": "DI Yogyakarta"
+    },
+    "hobi": ["memasak", "membaca"]
+  },
+  {
+    "nama": "Budi Santoso",
+    "umur": 32,
+    "alamat": {
+      "jalan": "Jl. Pemuda",
+      "kota": "Semarang",
+      "provinsi": "Jawa Tengah"
+    },
+    "hobi": ["berkebun", "bersepeda"]
+  }
+]
