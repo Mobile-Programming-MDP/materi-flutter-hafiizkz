@@ -19,27 +19,25 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: HomePage()
+      home: HomePage(),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-  Future<List<Karyawan>> loadKaryawan() async{
+  Future<List<Karyawan>> loadKaryawan() async {
     final String reponse = await rootBundle.loadString("assets/karyawan.json");
-    final List<dynamic> data =  json.decode(reponse);
+    final List<dynamic> data = json.decode(reponse);
     return data.map((json) => Karyawan.fromJson(json)).toList();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Daftar Karyawan"),
-      ),
+      appBar: AppBar(title: Text("Daftar Karyawan")),
       body: FutureBuilder(
-        future: loadKaryawan(), 
+        future: loadKaryawan(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return ListView.builder(
@@ -47,16 +45,19 @@ class HomePage extends StatelessWidget {
               itemBuilder: (context, index) {
                 final karyawan = snapshot.data![index];
                 return ListTile(
-                  title: Text(karyawan.nama,
+                  title: Text(
+                    karyawan.nama,
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
+                  ),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Umur : ${karyawan.umur}"),
-                      Text("Alamat : ${karyawan.alamat.jalan}, "
-                                    "${karyawan.alamat.kota}, "
-                                    "${karyawan.alamat.provinsi}"),
+                      Text(
+                        "Alamat : ${karyawan.alamat.jalan}, "
+                        "${karyawan.alamat.kota}, "
+                        "${karyawan.alamat.provinsi}",
+                      ),
                       Text("Hobi : ${karyawan.hobi.join(", ")}"),
                     ],
                   ),
@@ -68,7 +69,8 @@ class HomePage extends StatelessWidget {
           } else {
             return const Center(child: CircularProgressIndicator());
           }
-        }),
+        },
+      ),
     );
   }
 }
