@@ -17,19 +17,17 @@ class Movie {
     required this.backdropPath,
     required this.releaseDate,
     required this.voteAverage,
-  }) ;
+  });
 
-  factory Movie.fromJson(Map<String, dynamic> json){
-    return Movie (
-      id : json['id'] ?? '',
-      title : json['title'] ?? '',
-      overview : json['overview'] ?? '',
-      posterPath : json['poster_path'] ?? '',
-      backdropPath : json['backdrop_path'] ?? '',
-      releaseDate : json['release_date'] ?? '',
-      voteAverage : json['vote_average'].toDouble() ?? 0.0,
+  factory Movie.fromJson(Map<String, dynamic> json) {
+    return Movie(
+      id: json['id'] ?? 0,
+      title: json['title'] ?? '',
+      overview: json['overview'] ?? '',
+      posterPath: json['poster_path'] ?? '',
+      backdropPath: json['backdrop_path'] ?? '',
+      releaseDate: json['release_date'] ?? '',
+      voteAverage: (json['vote_average'] ?? 0).toDouble(),
     );
   }
-
-
 }
