@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Movie {
   final int id;
   final String title;
@@ -19,7 +17,7 @@ class Movie {
     required this.voteAverage,
   });
 
-  factory Movie.fromJson(Map<String, dynamic> json) {
+  factory Movie.fromJson(Map json) {
     return Movie(
       id: json['id'] ?? 0,
       title: json['title'] ?? '',
@@ -29,5 +27,17 @@ class Movie {
       releaseDate: json['release_date'] ?? '',
       voteAverage: (json['vote_average'] ?? 0).toDouble(),
     );
+  }
+
+  Map toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'overview': overview,
+      'poster_path': posterPath,
+      'backdrop_path': backdropPath,
+      'release_date': releaseDate,
+      'vote_average': voteAverage,
+    };
   }
 }
