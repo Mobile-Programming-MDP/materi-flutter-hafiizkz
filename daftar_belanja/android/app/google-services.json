@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300762415901",
+    "project_id": "proyek-pertama-f873c",
+    "storage_bucket": "proyek-pertama-f873c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300762415901:android:56b9110a2b6a45d7f057f4",
+        "android_client_info": {
+          "package_name": "com.example.daftar_belanja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHRm-quK3HGwGxKuRmPz6iO3B46ZBec30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
