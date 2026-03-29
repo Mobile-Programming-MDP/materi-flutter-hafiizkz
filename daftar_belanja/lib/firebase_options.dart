@@ -65,5 +65,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '300762415901',
     projectId: 'proyek-pertama-f873c',
     storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com'
   );
 }
