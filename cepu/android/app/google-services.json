@@ -8,6 +8,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:300762415901:android:a66ce8e6d871fd89f057f4",
+        "android_client_info": {
+          "package_name": "com.example.cepu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHRm-quK3HGwGxKuRmPz6iO3B46ZBec30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:300762415901:android:56b9110a2b6a45d7f057f4",
         "android_client_info": {
           "package_name": "com.example.daftar_belanja"
