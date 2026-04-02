@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cepu App',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.green),
