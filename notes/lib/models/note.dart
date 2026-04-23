@@ -4,7 +4,7 @@ class Note {
   String? id;
   final String title;
   final String description;
-  String? imageUrl;
+  String? imageBase64;
   Timestamp? createdAt;
   Timestamp? updatedAt;
 
@@ -12,7 +12,7 @@ class Note {
     this.id,
     required this.title,
     required this.description,
-    this.imageUrl,
+    this.imageBase64,
     this.createdAt,
     this.updatedAt,
   });
@@ -23,9 +23,9 @@ class Note {
       id: doc.id,
       title: data['title'],
       description: data['description'],
-      imageUrl: data['imageUrl'],
-      createdAt: data['created_at'] as Timestamp?,
-      updatedAt: data['updated_at'] as Timestamp?,
+      imageBase64: data['image_base_64'],
+      createdAt: data['created_at'] as Timestamp,
+      updatedAt: data['updated_at'] as Timestamp,
     );
   }
 
@@ -33,7 +33,7 @@ class Note {
     return {
       'title': title,
       'description': description,
-      'image_url': imageUrl,
+      'image_base64': imageBase64,
       'created_at': createdAt,
       'updated_at': updatedAt,
     };
