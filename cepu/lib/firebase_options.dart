@@ -23,15 +23,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -47,30 +41,54 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAcBt43bpCl8q8pMs0VYfm72FCn7Vrkfxk',
-    appId: '1:675481592085:web:a1dece0c127b657cf4891c',
-    messagingSenderId: '675481592085',
-    projectId: 'notes-a34a0',
-    authDomain: 'notes-a34a0.firebaseapp.com',
-    storageBucket: 'notes-a34a0.firebasestorage.app',
-    measurementId: 'G-R7KQFYD3RD',
+    apiKey: 'AIzaSyBnUrlxMfytlrDL4zHdMJT-V6bpz_WuNUc',
+    appId: '1:300762415901:web:08708f1a0f149bdff057f4',
+    messagingSenderId: '300762415901',
+    projectId: 'proyek-pertama-f873c',
+    authDomain: 'proyek-pertama-f873c.firebaseapp.com',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com',
+    storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+    measurementId: 'G-FTYBT39SKZ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDMJTG6x9yBCCDdiXE_cU3n2WDRYE9NyE0',
-    appId: '1:675481592085:android:d5169d06233efbf8f4891c',
-    messagingSenderId: '675481592085',
-    projectId: 'notes-a34a0',
-    storageBucket: 'notes-a34a0.firebasestorage.app',
+    apiKey: 'AIzaSyAHRm-quK3HGwGxKuRmPz6iO3B46ZBec30',
+    appId: '1:300762415901:android:a66ce8e6d871fd89f057f4',
+    messagingSenderId: '300762415901',
+    projectId: 'proyek-pertama-f873c',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com',
+    storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyBicICfDPQkQYBk2Knd38sItHxQgjY2S-g',
+    appId: '1:300762415901:ios:4e924bf0798cb3c5f057f4',
+    messagingSenderId: '300762415901',
+    projectId: 'proyek-pertama-f873c',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com',
+    storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+    iosBundleId: 'com.example.cepu',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBicICfDPQkQYBk2Knd38sItHxQgjY2S-g',
+    appId: '1:300762415901:ios:4e924bf0798cb3c5f057f4',
+    messagingSenderId: '300762415901',
+    projectId: 'proyek-pertama-f873c',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com',
+    storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+    iosBundleId: 'com.example.cepu',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAcBt43bpCl8q8pMs0VYfm72FCn7Vrkfxk',
-    appId: '1:675481592085:web:ccf4fba02b8947bbf4891c',
-    messagingSenderId: '675481592085',
-    projectId: 'notes-a34a0',
-    authDomain: 'notes-a34a0.firebaseapp.com',
-    storageBucket: 'notes-a34a0.firebasestorage.app',
-    measurementId: 'G-NTSS9LW1XH',
+    apiKey: 'AIzaSyBnUrlxMfytlrDL4zHdMJT-V6bpz_WuNUc',
+    appId: '1:300762415901:web:a17bee9eb9ee95c3f057f4',
+    messagingSenderId: '300762415901',
+    projectId: 'proyek-pertama-f873c',
+    authDomain: 'proyek-pertama-f873c.firebaseapp.com',
+    databaseURL: 'https://proyek-pertama-f873c-default-rtdb.firebaseio.com',
+    storageBucket: 'proyek-pertama-f873c.firebasestorage.app',
+    measurementId: 'G-MDCE2HWQJ3',
   );
+
 }
