@@ -37,6 +37,10 @@ dependencies:
   firebase_core: ^4.6.0
   firebase_database: ^12.2.0
   firebase_auth: ^6.3.0
+  cloud_firestore: ^6.3.0 
+  image_picker: ^1.2.2
+  geolocator: ^14.0.2
+  url_launcher: ^6.3.2
   
 
 
