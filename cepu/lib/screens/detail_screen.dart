@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:cepu/models/post.dart';
+import 'package:cepu/screens/map_detail_screen.dart';
 import 'package:cepu/services/post_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -84,8 +85,7 @@ class DetailScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (post.category != null)
-                    Chip(label: Text(post.category!)),
+                  if (post.category != null) Chip(label: Text(post.category!)),
                   const SizedBox(height: 8),
                   Text(
                     post.description ?? '',
@@ -119,6 +119,19 @@ class DetailScreen extends StatelessWidget {
                       ],
                     ),
                   ],
+                  const SizedBox(height: 12),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => MapDetailScreen(post: post),
+                        ),
+                      );
+                    },
+                    icon: const Icon(Icons.map),
+                    label: const Text('View on Map'),
+                  ),
                 ],
               ),
             ),
